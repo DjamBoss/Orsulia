@@ -33,13 +33,13 @@ client.on('guildMemberAdd', function (member) {
     let embed = new Discord.RichEmbed()
         .setDescription(':tada: **' + member.user.username + '** a rejoint ' + member.guild.name)
         .setFooter('Nous sommes désormais ' + member.guild.memberCount)
-    member.guild.channels.get('649276688462643210').send(embed)
-    member.addRole('649249365621342231')
+    member.guild.channels.get('681883946380034099').send(embed)
+    member.addRole('681884214701981784')
 })
  
 client.on('guildMemberRemove', function (member) {
     let embed = new Discord.RichEmbed()
         .setDescription(':cry: **' + member.user.username + '** a quitté ' + member.guild.name)
         .setFooter('Nous sommes désormais ' + member.guild.memberCount)
-    member.guild.channels.get('649276688462643210').send(embed)
+    member.guild.channels.get('681883946380034099').send(embed)
 })
